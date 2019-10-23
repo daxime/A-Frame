@@ -8,15 +8,14 @@
 </head>
 
 <body>
-	<a-scene>
+	<a-scene stats>
 		<a-sky color="#D6F6FF"></a-sky>
-	
+		
 		<a-assets>
-			<a-asset-item id="chambre" src="./obj/chambre.obj"></a-asset-item>
-			<a-asset-item id="cham_mtl" src="./obj/chambre.mtl"></a-asset-item>
+			<a-asset-item id="chambre" src="./obj/chambre.glb"></a-asset-item>
 		</a-assets>
 
-		<a-obj-model src="#chambre" mtl="#cham_mtl"></a-obj-model>
+		<a-obj-model gltf-model="#chambre" modify-materials></a-obj-model>
 	</a-scene>
 </body>
 </html>
